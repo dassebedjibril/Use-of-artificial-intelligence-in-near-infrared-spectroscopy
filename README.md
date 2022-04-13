@@ -4,3 +4,5 @@ This work has benefited from aid from the French State giving a favorable opinio
 ### Near infrared spectroscopy (NIRS) and Signal processing
 
 ![Alt text](/relative/path/to/img.PNG?raw=true "Optional Title")
+
+![your-pic-caption-name](../_asset/img.PNG)
