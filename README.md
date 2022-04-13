@@ -166,10 +166,100 @@ the number of epochs on the one hand without Transfer learning and on the other 
 without re-training the first convolution layers for the three values of the 𝑘_𝑓𝑜𝑙𝑑 for
 the other three species
 
+a) 𝑳𝑼𝑪𝑨𝑺_𝑺𝑶𝑪_𝑮𝒓𝒂𝒔𝒔𝒍𝒂𝒏𝒅_𝟐𝟖𝟔𝟕_𝑵𝒐𝒄𝒊𝒕𝒂
+
 <div align="center">
-    <img src="img5.PNG" width="500px"</img> 
+    <img src="img5.PNG" width="600px"</img> 
+</div>
+
+A good fit is the goal of the learning algorithm and exists between a model of
+over-adjustment and under-adjustment. A good fit is identified by a loss
+training and validation that decreases to a point of stability with a deviation
+minimum between the two final loss values. In Figure 6.𝑎1 the gaps between the two
+are much larger than those in Figure 6.𝑎2. We also observe a
+rapid convergence during Transfer learning (Figure 6.𝑎2) and therefore learning is more
+fast in this case. On the other hand, all learning transfer curves are below the
+best score without transfer which is 𝟎. 𝟎𝟎𝟗𝟕 for the first fold, 𝟎. 𝟎𝟏𝟏𝟒 for the
+second fold and 𝟎. 𝟎𝟏𝟐𝟗 for the third fold this for the 𝑣𝑎𝑙𝑖𝑑𝑎𝑡𝑖𝑜𝑛 𝑙𝑜𝑠𝑠. We observe
+all the same a slight overflow around 92 epochs for the first fold but which remains
+negligible. This explains a better performance of the model with transfer learning for
+LUCAS_SOC_Grassland_2867_Nocita.
+
+b) 𝑳𝑼𝑪𝑨𝑺_𝒑𝑯_𝑶𝒓𝒈𝒂𝒏𝒊𝒄_𝟏𝟕𝟔𝟒_𝑳𝒊𝒖
+
+<div align="center">
+    <img src="img6.PNG" width="600px"</img> 
+</div>
+
+We also have the different deviations with the base model in Figure 6.𝑏1 for
+the three folds. This gap decreases considerably when we apply the Transfer
+learning Figure 6.𝑏2 and learning is faster. All learning transfer curves
+for the 𝑣𝑎𝑙𝑖𝑑𝑎𝑡𝑖𝑜𝑛 𝑙𝑜𝑠𝑠 are below the best score without transfer which is 𝟎. 𝟎𝟒𝟏𝟎
+for the first fold, 𝟎. 𝟎𝟑𝟔𝟖 for the second fold and 𝟎. 𝟎𝟑𝟑𝟗 for the third fold. This
+explains a better performance of the model with transfer learning for
+𝐿𝑈𝐶𝐴𝑆_𝑝𝐻_𝑂𝑟𝑔𝑎𝑛𝑖𝑐_1764_𝐿𝑖𝑢.
+
+c) 𝑳𝑼𝑪𝑨𝑺_𝑺𝑶𝑪_𝑶𝒓𝒈𝒂𝒏𝒊𝒄_𝟑𝟓𝟐𝟖_𝑵𝒐𝒄𝒊𝒕𝒂
+
+<div align="center">
+    <img src="img7.PNG" width="600px"</img> 
+</div>
+
+Here the difference between the two scores is not very great with the basic model for the
+three folds see Figure. 6.𝑐1. For the first fold in Figure 6.𝑐2 some values of the
+𝑣𝑎𝑙𝑖𝑑𝑎𝑡𝑖𝑜𝑛 𝑙𝑜𝑠𝑠 exhibit the best performance (i.e. 𝟎. 𝟎𝟏𝟑𝟖 is less than
+certain values after transfer) but globally the model with transfer converges towards the
+superior performance to the base model. Regarding the other two folds, All
+learning transfer curves for the 𝑣𝑎𝑙𝑖𝑑𝑎𝑡𝑖𝑜𝑛 𝑙𝑜𝑠𝑠 are below the best score without
+transfer which is equal to 𝟎. 𝟎𝟏𝟐𝟕 for the second fold and 𝟎. 𝟎𝟏𝟑𝟖 for the third fold.
+
+##### 1) Transfer learning by freezing the intermediate layers: comparison with the first Transfer.
+
+
+After performing a second Transfer learning while keeping only the layers intermediaries (second convolution layer) of the basic network without however retraining them, let us make a comparison with the model of the first transferred network for each of our three species.
+
+a) 𝑳𝑼𝑪𝑨𝑺_𝑺𝑶𝑪_𝑮𝒓𝒂𝒔𝒔𝒍𝒂𝒏𝒅_𝟐𝟖𝟔𝟕_𝑵𝒐𝒄𝒊𝒕𝒂
+
+<div align="center">
+    <img src="img8.PNG" width="600px"</img> 
+</div>
+
+In all three cases, 𝐹𝑜𝑙𝑑 𝑛°0, 𝐹𝑜𝑙𝑑 𝑛°1 and 𝐹𝑜𝑙𝑑 𝑛°2, the second model of Transfer learning
+(Figure 7.𝑎2) has the highest scores. We contact an advantage in the use of diapers
+and intermediate weights already trained with the base model. This second model of
+Transfer learning significantly improves scores which are all higher than the best
+of the three scores of the basic model without Transfer learning (0.0097) for
+LUCAS_SOC_Grassland_2867_Nocita
+
+b) 𝑳𝑼𝑪𝑨𝑺_𝒑𝑯_𝑶𝒓𝒈𝒂𝒏𝒊𝒄_𝟏𝟕𝟔𝟒_𝑳𝒊𝒖
+
+<div align="center">
+    <img src="img9.PNG" width="600px"</img> 
+</div>
+<div align="center">
+    <img src="img10.PNG" width="600px"</img> 
 </div>
 
 
+For LUCAS_pH_Organic_1764_Liu on the other hand, there is not too much improvement in terms of
+scores for the two Transfer learning models. The difference between the two curves for the
+second model of the reduced 𝐅𝐨𝐥𝐝 𝐧°𝟎, which is not the case with the 𝐅𝐨𝐥𝐝 𝐧°𝟏 of the first model.
+The curves of the 𝐅𝐨𝐥𝐝 𝐧°𝟐 in the two cases show no difference in terms of
+performance. Overall performance in both Transfer models (0.0011) remains
+much larger than those of the basic model without Transfer (0.0034).
+
+c) 𝑳𝑼𝑪𝑨𝑺_𝑺𝑶𝑪_𝑶𝒓𝒈𝒂𝒏𝒊𝒄_𝟑𝟓𝟐𝟖_𝑵𝒐𝒄𝒊𝒕𝒂
+
+<div align="center">
+    <img src="img11.PNG" width="600px"</img> 
+</div>
 
 
+In all three cases, 𝐹𝑜𝑙𝑑 𝑛°0, 𝐹𝑜𝑙𝑑 𝑛°1 and 𝐹𝑜𝑙𝑑 𝑛°2, the second model of Transfer learning
+has the highest scores for 𝐿𝑈𝐶𝐴𝑆_𝑆𝑂𝐶_𝑂𝑟𝑔𝑎𝑛𝑖𝑐_3528_𝑁𝑜𝑐𝑖𝑡𝑎. Hence the advantage of using
+layers and intermediate weights already trained with the basic model compared to the layers
+entrance. Overall performance in both Transfer models remains more
+larger than those of the base model without Transfer (0.0127).
+
+
+##### 3) Transfer learning while keeping the behind layers:
