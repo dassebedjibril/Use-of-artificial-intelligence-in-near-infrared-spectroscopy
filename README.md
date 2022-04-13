@@ -263,3 +263,61 @@ larger than those of the base model without Transfer (0.0127).
 
 
 ##### 3) Transfer learning while keeping the behind layers:
+
+Here we perform a third Transfer learning while keeping the third layer of
+convolution of the basic network without however re-training them, and thereafter we will
+comparison with the first two Transfer learning models for each of our three
+species. For this third model, we obtain the following curves:
+
+a) 𝑳𝑼𝑪𝑨𝑺_𝑺𝑶𝑪_𝑮𝒓𝒂𝒔𝒔𝒍𝒂𝒏𝒅_𝟐𝟖𝟔𝟕_𝑵𝒐𝒄𝒊𝒕𝒂
+
+<div align="center">
+    <img src="img11.PNG" width="600px"</img> 
+</div>
+
+Here the performance of the 𝑭𝒐𝒍𝒅 𝒏°𝟎 is superior to that of the first two models as well as the
+performance of the 𝑭𝒐𝒍𝒅 𝒏°𝟏 and 𝑭𝒐𝒍𝒅 𝒏°𝟐 of the first transfer model. For 𝑭𝒐𝒍𝒅 𝒏°𝟏 and
+𝑭𝒐𝒍𝒅 𝒏°𝟐 the second transfer model has the best scores.
+
+
+b) 𝑳𝑼𝑪𝑨𝑺_𝒑𝑯_𝑶𝒓𝒈𝒂𝒏𝒊𝒄_𝟏𝟕𝟔𝟒_𝑳𝒊𝒖
+
+<div align="center">
+    <img src="img12.PNG" width="600px"</img> 
+</div>
+
+Here the performance of the 𝑭𝒐𝒍𝒅 𝒏°𝟎 is superior to that of the first two models but
+lower than the 𝑭𝒐𝒍𝒅 𝒏°𝟏 of the first transfer model. For the 𝑭𝒐𝒍𝒅 𝒏°𝟏 and 𝑭𝒐𝒍𝒅 𝒏°𝟐 the
+second transfer model has the best scores.
+
+
+c) 𝑳𝑼𝑪𝑨𝑺_𝑺𝑶𝑪_𝑶𝒓𝒈𝒂𝒏𝒊𝒄_𝟑𝟓𝟐𝟖_𝑵𝒐𝒄𝒊𝒕𝒂
+
+<div align="center">
+    <img src="img13.PNG" width="600px"</img> 
+</div>
+
+As for the two previous datasets, the performance of LUCAS_SOC_Organic
+_3528_Nocita 𝑭𝒐𝒍𝒅 𝒏°𝟎 for the third model is higher than that of the first two
+models. For 𝑭𝒐𝒍𝒅 𝒏°𝟏 and 𝑭𝒐𝒍𝒅 𝒏°𝟐 the second transfer pattern has the best scores.
+
+
+### Conclusion
+
+This study aimed to implement Transfer Learning and test its effectiveness.
+in terms of performance, convergence speed, and robustness and therefore the most
+were aimed at testing which are the layers of the convolutional neural network
+that we used, the most useful to transfer among the initial, intermediate layers
+or finals. To do this, we mainly used the following four datasets
+LUCAS_SOC_Cropland_Nocita, LUCAS_SOC_Grassland_Nocita, LUCAS_SOC_Organic_Nocita and
+LUCAS_PH_Organic_Liu and sufficiently trained the neural network with this set of
+LUCAS_SOC_Cropland_Nocita data as it is the largest dataset and contains more
+information. After transferring the weights from our base model and transferring to the
+other datasets, we made some observations after measurements of
+performance. The three transfer learning models to LUCAS_SOC_Grassland_Nocita,
+LUCAS_SOC_Organic_Nocita and LUCAS_PH_Organic_Liu perform better than with the model
+without transfer. A comparison between the three Transfer learning models with our three
+dataset shows us the best results with the second model (Transfer
+learning while keeping the intermediate layers of the pretrained network) in terms of
+convergence and performance.
+
