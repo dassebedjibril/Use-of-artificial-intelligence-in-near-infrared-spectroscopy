@@ -32,3 +32,14 @@ chemical analyses: this is the `calibration` phase. Knowledge of the criteria
 main characterization of the models makes it possible to quickly judge the quality of the
 calibrations presented. Thereafter, we have the evaluation of the precision that we will have
 during the practical use of the calibration which is the `validation`.
+
+
+### Dataset
+
+The NIRS has a large number of applications in the industrial field (chemistry,
+pharmacy, agro-industries). For example, in the animal feed laboratory of the
+CIRAD it is used to estimate the chemical composition of food samples,
+fodder, products (meat), faeces (digestibility studies). Within the UMR
+Agap Institute, it makes it possible to study the composition of sorghum grains, tubers
+yams or rice leaves.
+
