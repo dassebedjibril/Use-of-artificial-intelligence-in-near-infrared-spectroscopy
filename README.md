@@ -96,7 +96,7 @@ convolution with the use of 1D input data.
 CNNs architectures are the most used in learning approaches in depth. They are generally composed of an input layer, several hidden layers (convolution, pooling, and fully connected layers) and an output layer. 1D-CNN has an input layer and 1D filters on input layers. Convolution adapted to the one-dimensional spectrum of our data. In this study, we used the 1D-CNN architecture because the structure is simple and well described.
 
 <div align="center">
-    <img src="i2.JPG" width="450px"</img> 
+    <img src="i2.JPG" width="500px"</img> 
 </div>
 
 
@@ -145,9 +145,30 @@ following table shows us the weights of the different layers of our basic model 
 we can train and those we cannot.
 
 <div align="center">
-    <img src="img4.PNG" width="450px"</img> 
+    <img src="img4.PNG" width="500px"</img> 
 </div>
 
+
+The idea being to start from the largest dataset containing more information
+𝐿𝑈𝐶𝐴𝑆_𝑆𝑂𝐶_𝑐𝑟𝑜𝑝𝑙𝑎𝑛𝑑 and then train the neural network sufficiently with this game
+of data so that the layers are dedicated to processing the signal as needed. Once the processed signal, the weights are transferred for all future calibrations in order to study the performance, convergence speed, and robustness.
+
+#### Results
+
+We trained our four datasets with our base model. Subsequently, we
+have carried out Transfer learning from 𝐿𝑈𝐶𝐴𝑆_𝑆𝑂𝐶_𝑐𝑟𝑜𝑝𝑙𝑎𝑛𝑑 to the other three dataset having less observations 
+
+##### 1) Transfer learning without re-training the first convolution layers
+
+Using the same network with which we obtained the optimal values of the largest
+dataset, we obtain the following curves describing the evolution of the 𝑙𝑜𝑠𝑠 as a function
+the number of epochs on the one hand without Transfer learning and on the other hand with Transfer learning
+without re-training the first convolution layers for the three values of the 𝑘_𝑓𝑜𝑙𝑑 for
+the other three species
+
+<div align="center">
+    <img src="img5.PNG" width="500px"</img> 
+</div>
 
 
 
