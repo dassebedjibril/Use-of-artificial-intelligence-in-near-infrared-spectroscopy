@@ -44,7 +44,7 @@ Agap Institute, it makes it possible to study the composition of sorghum grains,
 yams or rice leaves.
 
 <div align="center">
-    <img src="c.PNG" width="250px"</img> 
+    <img src="c.PNG" width="400px"</img> 
 </div>
 
 For our study, the FildSpec Near IR Spectrometer (ADS) was used with the lengths
@@ -53,18 +53,34 @@ the curve of the absorbance of the sample as a function of wavelength. We obtain
 the following spectrum for our samples
 
 <div align="center">
-    <img src="d.PNG" width="250px"</img> 
+    <img src="d.png" width="400px"</img> 
 </div>
 
 For each dataset we used, we have the number of spectra as well
 than the size in kilobytes:
 
 
-
+<div align="center">
+    <img src="img2.PNG" width="450px"</img> 
+</div>
 
 
 LUCAS_SOC_cropland_Nocita is the learning game from which we will extract the weights
 layers to transfer. It is used as a reference because it is the most common dataset.
 complete (6111 spectra).
 Each data set is divided into a calibration set (3/4 of the surrounding data) and a
-validation dataset (1/4 of the data). The initial dataset split is
+validation dataset (1/4 of the data). The initial dataset split is performed using the Kennard-Stone algorithm. For LUCAS_SOC_Cropland_6111_Nocita for example, here are the generated files:
+
+<div align="center">
+    <img src="img3.PNG" width="450px"</img> 
+</div>
+
+
+### Model description
+
+CNNs architectures are the most used in learning approaches in depth. They are generally composed of an input layer, several hidden layers (convolution, pooling, and fully connected layers) and an output layer. 1D-CNN has an input layer and 1D filters on input layers. Convolution adapted to the one-dimensional spectrum of our data. In this study, we used the 1D-CNN architecture because the structure is simple and well described.
+
+
+
+
+
