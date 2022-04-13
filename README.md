@@ -43,3 +43,28 @@ fodder, products (meat), faeces (digestibility studies). Within the UMR
 Agap Institute, it makes it possible to study the composition of sorghum grains, tubers
 yams or rice leaves.
 
+<div align="center">
+    <img src="c.PNG" width="250px"</img> 
+</div>
+
+For our study, the FildSpec Near IR Spectrometer (ADS) was used with the lengths
+wave between 350 and 2500 nm. The spectrum obtained can be visualized by looking at
+the curve of the absorbance of the sample as a function of wavelength. We obtain
+the following spectrum for our samples
+
+<div align="center">
+    <img src="d.PNG" width="250px"</img> 
+</div>
+
+For each dataset we used, we have the number of spectra as well
+than the size in kilobytes:
+
+
+
+
+
+LUCAS_SOC_cropland_Nocita is the learning game from which we will extract the weights
+layers to transfer. It is used as a reference because it is the most common dataset.
+complete (6111 spectra).
+Each data set is divided into a calibration set (3/4 of the surrounding data) and a
+validation dataset (1/4 of the data). The initial dataset split is
