@@ -128,6 +128,27 @@ taken 𝑘 = 3. This technique helps to select the right machine learning models
 
 The use of all these techniques has allowed us to improve performance and with
 the biggest dataset 𝐿𝑈𝐶𝐴𝑆_𝑆𝑂𝐶_𝑐𝑟𝑜𝑝𝑙𝑎𝑛𝑑 (of size 628 𝑀𝑜) we got
-The following scores: 𝑅𝑀𝑆𝐸_𝐶𝑎𝑙𝑖𝑏𝑟𝑎𝑡𝑖𝑜𝑛 = 4.74, 𝑅𝑀𝑆𝐸_𝑉𝑎𝑙𝑖𝑑𝑎𝑡𝑖𝑜𝑛 = 3.88, 𝑅2_𝐶𝑎𝑙𝑖𝑏𝑟𝑎𝑡𝑖𝑜𝑛 = 0.91, 𝑅2_𝑉𝑎𝑙𝑖𝑑𝑎𝑡𝑖𝑜𝑛 = 0.70.
+The following scores: $𝑅𝑀𝑆𝐸_𝐶𝑎𝑙𝑖𝑏𝑟𝑎𝑡𝑖𝑜𝑛 = 4.74$, 𝑅𝑀𝑆𝐸_𝑉𝑎𝑙𝑖𝑑𝑎𝑡𝑖𝑜𝑛 = 3.88, 𝑅2_𝐶𝑎𝑙𝑖𝑏𝑟𝑎𝑡𝑖𝑜𝑛 = 0.91, 𝑅2_𝑉𝑎𝑙𝑖𝑑𝑎𝑡𝑖𝑜𝑛 = 0.70.
 
 #### Transfer learning
+
+
+Transfer learning is one of the research fields of
+machine learning which aims to transfer knowledge of one or more tasks
+sources to one or more target tasks. These are skills learned from
+previous tasks used to improve similar new tasks. Transfer learning
+makes it possible to realize significant benefits, in terms of time and techniques
+of learning. These benefits are also based on fine tuning in Transfer learning. The fine
+tuning allows specific settings during the Transfer learning method, allowing
+to make gradual adjustments and to freeze certain weights of the pre-trained model. the
+following table shows us the weights of the different layers of our basic model that
+we can train and those we cannot.
+
+<div align="center">
+    <img src="img4.PNG" width="450px"</img> 
+</div>
+
+
+
+
+
